@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>이놈의 똥컴</title>
+	<style>
+		body{background: black;
+		}
+	 	.rain{width: 1px; height: 5px;border-radius: 20%; background: white; position: absolute; margin: 0;
+     	 animation: rr 1.5s infinite ease-in; opacity: 0;}
+      	@keyframes rr{
+         from{top: 0px;}
+         to{top: 630px; }
+      	}
+		
+		
+		#moon{margin-top: 30px; position: absolute; width: 250px; animation: mm 7s infinite alternate; opacity: 0;}
+		@keyframes mm{
+			from{left: 0px; transform: rotate(0deg);}
+			to{left: 1260px; transform: rotate(360deg);}
+		}
+
+		#comp{position: absolute; width: 400px; margin-top: 300px; margin-left: 550px;}
+		#night{position: absolute; width: 490px; margin-top: 220px; margin-left: 500px; opacity: 0;
+		}
+		.pop{position: absolute; opacity: 0;}
+
+		#epop1{margin-top: 250px; margin-left: 100px; width: 300px; 
+		 opacity: 0;}
+			
+		#epop2{margin-top: 300px; margin-left: 350px; width: 400px;}
+		#epop3{margin-top: 350px; margin-left: 400px; width: 250px;}
+		#epop4{margin-top: 100px; margin-left: 600px; width: 300px;}
+		#epop5{margin-top: 450px; margin-left: 850px; width: 200px;}
+		#epop6{margin-top: 250px; margin-left: 900px; width: 350px;}
+		#epop7{margin-top: 490px; margin-left: 1000px; width: 300px;}
+
+		#logo1{margin-top: 300px; margin-left: 150px; width: 400px;}
+		#logo2{margin-top: 350px; margin-left: 1000px; width: 250px;}
+		#logo3{margin-top: 100px; margin-left: 600px; width: 300px;}
+		#logo4{margin-top: 450px; margin-left: 850px; width: 200px;}
+
+		#er1{margin-top: 50px; margin-left: 50px; width: 250px;}
+		#er2{margin-top: 100px; margin-left: 1100px; width: 300px;}
+		#er3{margin-top: 150px; margin-left: 400px; width: 250px;}
+		
+
+		@keyframes eo {from{opacity: 0;} to{opacity: 1;}}
+		@keyframes oe {from{opacity: 1;} to{opacity: 0;}}
+	
+	
+
+	</style>
+</head>
+<body>
+	<div class="rain" id="rrr"></div>
+	<img src="moon.gif" id="moon">
+
+
+	
+	<img src="epopup.jpg" id="epop1" class="pop">
+	<img src="error2.gif" id="er1" class="pop">
+	<img src="epopup.jpg" id="epop2" class="pop">
+	<img src="logo.gif" id="logo1" class="pop">
+	<img src="epopup.jpg" id="epop3" class="pop">
+	<img src="error2.gif" id="er2" class="pop" >
+	<img src="epopup.jpg" id="epop4" class="pop">
+	<img src="logo.gif" id="logo2" class="pop">
+	<img src="epopup.jpg" id="epop5" class="pop">
+	
+	<img src="epopup.jpg" id="epop6" class="pop">
+	<img src="logo.gif" id="logo3" class="pop">
+	<img src="logo.gif" id="logo4" class="pop">
+	<img src="epopup.jpg" id="epop7" class="pop">
+	<img src="error2.gif" id="er3" class="pop">
+
+	<img src="nightman.gif" id="night">
+	<img src="computer.gif" id="comp">
+	
+ 
+   <script>
+      for(var i=0; i<60; i++){
+         var tt = rrr.cloneNode(true);
+         tt.id = i;
+         tt.style.left = a(1500) + "px";
+         tt.style.animationDuration = a(1) + "s";
+         tt.style.opacity = a(1);
+         tt.style.height = a(90) + "px";
+         tt.style.width = a(2) + "px";
+         document.body.appendChild(tt);
+      }
+
+      function a(num){
+         var cc = Math.random()*num;
+         return cc
+      }
+   </script>
+
+   <script type="text/javascript">
+   		comp.onclick = function(){
+   			comp.style.opacity = "0";
+   			night.style.opacity = "1";
+   			epop1.style.opacity = "1";
+   			epop1.style.animation = "eo 1s alternate infinite";
+   			epop2.style.opacity = "1";
+   			epop2.style.animation = "oe 0.5s alternate infinite";
+   			epop3.style.opacity = "1";
+   			epop3.style.animation = "eo 0.7s alternate infinite";
+   			epop4.style.opacity = "1";
+   			epop4.style.animation = "eo 1s alternate infinite";
+   			epop5.style.opacity = "1";
+   			epop5.style.animation = "oe 1s alternate infinite";
+   			epop6.style.opacity = "1";
+   			epop6.style.animation = "eo 0.5s alternate infinite";
+   			epop7.style.opacity = "1";
+   			epop7.style.animation = "oe 2s alternate infinite";
+   			moon.style.opacity = "1";
+   			logo1.style.opacity = "1";
+   			logo1.style.animation = "oe 0.6s alternate infinite";
+   			logo2.style.opacity = "1";
+   			logo2.style.animation = "eo 1s alternate infinite";
+   			logo3.style.opacity = "1";
+   			logo3.style.animation = "oe 1s alternate infinite";
+   			logo4.style.opacity = "1";
+   			logo4.style.animation = "oe 0.2s alternate infinite";
+   			er1.style.opacity = "1";
+   			er1.style.animation = "oe 0.3s alternate infinite";
+   			er2.style.opacity = "1";
+   			er2.style.animation = "eo 0.5s alternate infinite";
+   			er3.style.opacity = "1";
+   			er3.style.animation = "oe 2s alternate infinite";
+   			
+
+
+   			window.alert("컴퓨터가 고장났다!");
+
+   	
+
+   		} 
+
+
+   </script>
+
+ 
+
+</body>
+</html>
